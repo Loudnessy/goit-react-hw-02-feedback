@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { StyledSection } from "./Section.styled"
 
 export const Section = ({title, children}) => {
@@ -5,4 +6,8 @@ export const Section = ({title, children}) => {
         <h2>{title}</h2>
         {children}
     </StyledSection>
+}
+Section.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.object
 }
