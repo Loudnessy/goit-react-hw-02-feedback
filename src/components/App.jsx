@@ -26,7 +26,7 @@ countTotalFeedback() {
 return good + neutral + bad
 }
 countPositiveFeedbackPercentage() {
-  const {good, neutral, bad} = this.state
+  const {good} = this.state
   const total = this.countTotalFeedback()
   const PositiveFeedbackPercentage = ((good / total) * 100)
   if (!PositiveFeedbackPercentage) {
